@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import LoginForm from './components/LoginForm';
 
-import './App.css';
+import './styles/App.css';
 
 function App() {
   const admin = {
@@ -18,6 +18,7 @@ function App() {
       setUser({
         email:details.email,
       })
+      setError("");
     }
     else{
       console.log("Dont match");
@@ -43,7 +44,7 @@ function App() {
           <div>
             <div className="split left">
               <div class="centered">
-                <img src="./book.png" alt="book pic"/>
+                <img src="./book.png" alt="Book"/>
                 <h1>School Name</h1>
               </div>
             </div>

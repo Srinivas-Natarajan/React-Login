@@ -1,25 +1,24 @@
 import React, { useState } from "react";
-import Form from "react-bootstrap/Form";
-import {  Button } from 'react-bootstrap'
 
-import "../Login.css";
+import "../styles/Login.css";
 
-export default function Login() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-
-  function validateForm() {
-    return email.length > 0 && password.length > 0;
-  }
+export default function LoginForm({Login,error}) {
+  const [details, setDetails] = useState({email:"",password:""});
 
   const handleSubmit = e =>{
       e.preventDefault();
+      Login(details)
   }
 
   return (
     <div className="Login">
         <div className="formImage">
-            <img variant="top" src="./contact.png" alt="book" className="iconImage"  />
+            <img variant="top" src="../contact.png" alt="Contact" className="iconImage"  />
+        </div>
+        <div className="error">
+        {(error !=="")?(
+                <div>{error}</div>
+            ):""}
         </div>
         <div className="form">
             <form onSubmit={handleSubmit}>
@@ -28,8 +27,8 @@ export default function Login() {
                     type="email"
                     placeholder="Email"
                     className="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
+                    onChange={(e) => setDetails({...details, email:e.target.value})}
+                    value={details.email}
                     />
                 </div>
                 <div>
@@ -37,15 +36,15 @@ export default function Login() {
                     type="password"
                     className="password"
                     placeholder="Password"
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
+                    onChange={(e) => setDetails({...details, password:e.target.value})}
+                    value={details.password}
                     />
                 </div>
                 <div className="links">
                     <span class="linkA"><a href="https://www.google.co.in/">Forgot password?</a></span>
                     <span class="linkB"><a href="https://www.google.co.in/">Forgot email?</a></span>
                 </div>
-                <button block size="lg" type="submit" disabled={!validateForm()} className="submit">
+                <button block size="lg" type="submit" className="submit">
                     Sign In
                 </button>
             </form>
