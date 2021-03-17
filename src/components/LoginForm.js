@@ -1,43 +1,56 @@
-import React, {useState} from 'react'
+import React, { useState } from "react";
+import Form from "react-bootstrap/Form";
+import {  Button } from 'react-bootstrap'
 
-function LoginForm({Login,error}) {
+import "../Login.css";
 
-    const [details,setDetails] = useState({email:"",password:""});
+export default function Login() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
-    const submithandler = e =>{
-        e.preventDefault();
-        Login(details);
-    }
+  function validateForm() {
+    return email.length > 0 && password.length > 0;
+  }
 
-    return (
-        <form onSubmit={submithandler}>
-            <div className="form-inner">
-                <h2>Login</h2>
-                {(error !== "")? ( <div className="error">{error}</div> ): ""}
-                <div className="form-group">
-                    <label htmlFor="email">Email:</label>
-                    <input 
-                        type="text" 
-                        name="email" 
-                        id="email" 
-                        onChange={e => setDetails({...details, email:e.target.value})}
-                        value={details.email}
+  const handleSubmit = e =>{
+      e.preventDefault();
+  }
+
+  return (
+    <div className="Login">
+        <div className="formImage">
+            <img variant="top" src="./book.png" alt="book" className="cardImage"  />
+        </div>
+        <div className="form">
+            <form onSubmit={handleSubmit}>
+                <div >
+                    <input
+                    autoFocus
+                    type="email"
+                    placeholder="Email"
+                    className="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                     />
                 </div>
-                <div className="form-group">
-                    <label htmlFor="password">Password:</label>
-                    <input 
-                        type="password" 
-                        name="password" 
-                        id="password"
-                        onChange={e => setDetails({...details, password:e.target.value})}
-                        value={details.password}
+                <div>
+                    <input
+                    type="password"
+                    className="password"
+                    placeholder="Password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
                     />
                 </div>
-                <input type="submit" value="Login"/>
-            </div>
-        </form>
-    )
+                <div className="links">
+                    <span class="linkA"><a href="https://www.google.co.in/">Forgot password?</a></span>
+                    <span class="linkB"><a href="https://www.google.co.in/">Forgot email?</a></span>
+                </div>
+                <button block size="lg" type="submit" disabled={!validateForm()} className="submit">
+                    Sign In
+                </button>
+            </form>
+        </div>
+    </div>
+  );
 }
-
-export default LoginForm

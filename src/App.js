@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import LoginForm2 from './components/LoginForm2';
+import LoginForm from './components/LoginForm';
 
 import './App.css';
 
@@ -43,12 +43,13 @@ function App() {
           <div>
             <div className="split left">
               <div class="centered">
-                <h2>School Name</h2>
+                <img src="./book.png" alt="book pic"/>
+                <h1>School Name</h1>
               </div>
             </div>
             <div className="split right">
-              <div class="centered">
-                <LoginForm2 Login={Login} error={error} />
+              <div class="centered-form">
+                <LoginForm Login={Login} error={error} />
               </div>
             </div>
           </div> 

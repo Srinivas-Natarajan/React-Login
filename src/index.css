@@ -5,23 +5,3 @@
   font-family: sans-serif;
 }
 
-.App{
-  height: 100vh;
-  display:flex;
-  align-items: center;
-  justify-content: center;
-}
-
-form{
-  display:block;
-  position: relative;
-
-}
-
-form:after{
-  content: '';
-  display: block;
-  position: absolute;
-  z-index: 1;
-  background-image: linear-gradient(to bottom right, #FFCE, #FE4880);
-}

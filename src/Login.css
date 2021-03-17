@@ -1,25 +1,81 @@
 .Login{
-    width:100%;
+    width:70%;
     height:100%;
+    padding: 5%;
     box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: auto;
+    margin-right: auto;
+    margin: auto;
 }
 
 .form{
-    width:100%;
+    position: relative;
     padding: 5%;
     margin-left: auto;
     margin-right: auto;
 }
 
-.email{
-    margin:10vh;
-    padding: 2px;
-    border-radius: 16px;
+.formImage{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 20%;
+    box-sizing: content-box;
+    margin-bottom: 10%;
+}
+
+.email{
+    padding: 10px;
+    margin-bottom: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    width:80%;
+    border-radius: 16px;
+    border: 1px solid grey;
 }
 .password{
-    margin:10vh;
-    padding: 2px;
+    padding: 10px;
+    margin-bottom: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    width:80%;
+    border-radius: 16px;
+    border: 1px solid grey;
+}
+
+.links{
+    color: lightslategray;
+    text-decoration: none;
+    margin: auto;
+    margin-bottom: 7%;
+    display:flex;
+    font-size: 10px;
+    justify-content: space-between;
+    width:80%;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    color: lightslategray;
+    text-decoration: none;
+}
+
+.linkA{
+    margin:0;
+    padding: 0;
+    text-align: center;
+    width: 50%;
+    border-right: 1px solid lightslategray;
+}
+
+.linkB{
+    margin:0;
+    padding: 0;
+    text-align: center;
+    width: 50%;
 }
 
 .submit{
@@ -29,14 +85,10 @@
     font-weight: 700;
     cursor: pointer;
     width: 80%;
-    height: 10%;
+    height: 2rem;
     border-radius: 16px;
     border: none;
+    margin: 10px;
 }
 
-.cardImage{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
+
