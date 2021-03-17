@@ -19,13 +19,12 @@ export default function Login() {
   return (
     <div className="Login">
         <div className="formImage">
-            <img variant="top" src="./book.png" alt="book" className="cardImage"  />
+            <img variant="top" src="./contact.png" alt="book" className="iconImage"  />
         </div>
         <div className="form">
             <form onSubmit={handleSubmit}>
                 <div >
                     <input
-                    autoFocus
                     type="email"
                     placeholder="Email"
                     className="email"
