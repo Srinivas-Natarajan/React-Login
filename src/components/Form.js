@@ -31,13 +31,13 @@ const Form = () =>{
     return(
         <div>
             <div className='form-container'>
-                <div className='form-image'>
+                <div className='form-image'>    {/*Contact photo*/}
                     <img className='form-img' src='/img/contact.png' alt='Contacts' />
                 </div>
                 {!isSubmitted ? (
-                    <FormSignup submitForm={submitForm} />
+                    <FormSignup submitForm={submitForm} />    /*Form fields and buttons*/
                 ) : (
-                    <FormSuccess />
+                    <FormSuccess />                           /*Render success if submitted*/
                 )}
             </div>
         </div>
