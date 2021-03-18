@@ -1,5 +1,9 @@
 # React Login Applicaiton (Reach Skyline)
 
+ ### To run the project either run
+     npm start
+ ### or use the link <a href="https://friendly-galileo-ce9f46.netlify.app/">React Login</a>
+
 ## Files Included:
   ### Components
 
