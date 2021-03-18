@@ -34,8 +34,8 @@ const FormSignup = ({ submitForm }) => {
             {errors.password && <p className="errors">{errors.password}</p>}
           </div>
           <div class="form-links">
-            <div class="links linkA"><a href="#">Forgot Password?</a></div>
-            <div class="links linkB"><a href="#">Forgot Email?</a></div>
+            <div class="links linkA"><a href="https://github.com/Srinivas-Natarajan">Forgot Password?</a></div>
+            <div class="links linkB"><a href="https://github.com/Srinivas-Natarajan">Forgot Email?</a></div>
           </div>
           <button className='form-input-btn' type='submit'>
             Sign in
