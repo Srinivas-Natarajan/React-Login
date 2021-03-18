@@ -1,23 +1,26 @@
 # React Login Applicaiton (Reach Skyline)
 
-## Components:
+## Files Included:
+###Components
 
-### 1. Form 
+#### i) Form 
 A card container to hold both form information and fields as well as all images. 
 
-### 2. Form Sign Up
+#### ii) Form Sign Up
 Contains all form fields and buttons to get the use input and the framework for validation of the inputs. Errors are detected and thrown if the input is incorrect or in the wrong format.
 
-### 3. Form Success
+#### iii) Form Success
 Component to display messages on successful login.
 
-## JavaScript Files
+### JavaScript Files
 
-### 1. validateInfo.js
+#### i) validateInfo.js
 Used to validate the user's email id and password to ensure they are in the correct format.
 
-### 2.useForm.js
+#### ii) useForm.js
 Used to set the state of the input fields and the error statuses if any.
+
+--
 
 ## Screenshots
 
