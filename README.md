@@ -2,7 +2,7 @@
 
  ### To run the project either run
      npm start
- ### or use the link <a href="https://friendly-galileo-ce9f46.netlify.app/">React Login</a>
+ ### or use the link <a href="https://friendly-galileo-ce9f46.netlify.app/" target="_blank">React Login</a>
 
 ## Files Included:
   ### Components
