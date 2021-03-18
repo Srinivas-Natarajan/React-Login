@@ -49,6 +49,11 @@
     border: 1px solid lightslategray;
 }
 
+.form-input:focus{
+    outline: 0;
+    box-shadow: 0 0 10px gray;
+}
+
 [placeholder]{
     padding-left: 5%;
     text-overflow:ellipsis;
@@ -107,6 +112,11 @@ a:visited {
     cursor: pointer;
     text-decoration: none;
 }
+
+.form-input-btn:focus {
+    outline: none;
+    box-shadow: none;
+  }
 
 .errors{
     font-size: 12px;

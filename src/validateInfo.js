@@ -8,9 +8,9 @@ export default function validateInfo(values) {
   }
   if (!values.password) {
     errors.password = 'Password is required';
-  } else if (values.password.length < 6) {
-    errors.password = 'Password needs to be 6 characters or more';
-  } else if(!/^[a-zA-Z0-9]+$/.test(values.password)){
+  } else if (values.password.length < 8) {
+    errors.password = 'Password needs to be 8 characters or more';
+  } else if(!/^(?=.*\d)(?=.*[a-zA-Z]).{8,}$/.test(values.password)){
     errors.password = 'Password must consist of Alphanumeric characters';
   }
   
