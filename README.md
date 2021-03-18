@@ -1,7 +1,7 @@
 # React Login Applicaiton (Reach Skyline)
 
 ## Files Included:
-###Components
+### Components
 
 #### i) Form 
 A card container to hold both form information and fields as well as all images. 
@@ -20,7 +20,7 @@ Used to validate the user's email id and password to ensure they are in the corr
 #### ii) useForm.js
 Used to set the state of the input fields and the error statuses if any.
 
---
+---
 
 ## Screenshots
 
