@@ -22,10 +22,12 @@ Used to set the state of the input fields and the error statuses if any.
 ## Screenshots
 
 ### 1. Login Page
+![Login](https://github.com/Srinivas-Natarajan/React-Login/blob/main/screenshots/login_page.png?raw=true)
 
 <br/>
 
 ### 2. Email Verification
+![Email](https://github.com/Srinivas-Natarajan/React-Login/blob/main/screenshots/email_validation.png?raw=true)
 
 <br/>
 
@@ -34,13 +36,17 @@ Used to set the state of the input fields and the error statuses if any.
 <br/>
 
 #### i) Length Verification
+![Password_1](https://github.com/Srinivas-Natarajan/React-Login/blob/main/screenshots/password_1.png?raw=true)
+
 
 <br/>
 
 #### ii) Alphanumeric characters verification
+![Password_2](https://github.com/Srinivas-Natarajan/React-Login/blob/main/screenshots/password_2.png?raw=true)
+
 
 <br/>
 
 ### 4. Successful login
+![Success](https://github.com/Srinivas-Natarajan/React-Login/blob/main/screenshots/success.png?raw=true)
 
-<br/>
