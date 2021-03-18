@@ -3,7 +3,7 @@
 ## Files Included:
   ### Components
 
-    #### i) Form 
+    **i) Form**
     A card container to hold both form information and fields as well as all images. 
 
     #### ii) Form Sign Up
